@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Vazir_Light';
+        src: url(./assets/fonts/Vazir-Light-FD-WOL.woff) format('woff');
+    }
+    @font-face {
+        font-family: 'Vazir_Bold';
+        src: url(./assets/fonts/Vazir-Bold-FD-WOL.woff) format('woff');
+    }
+}
