@@ -1,15 +1,271 @@
 <!doctype html>
-<html lang="en">
+<html class="font-Vazir_Light" dir="rtl" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="output.css">
-    <link rel="shortcut icon" href="./assets/images/Untitled.png" type="image/x-icon">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="output.css" rel="stylesheet">
+    <link href="./assets/images/Untitled.png" rel="shortcut icon" type="image/x-icon">
     <title>اسنپ</title>
 </head>
 <body>
 
+<!--navbar-->
+<nav class="w-full border border-b-1 ">
+
+    <div class="w-full md:w-4/5 h-[4.5rem] md:h-[5.5rem] flex justify-start items-center m-auto">
+
+        <div class="flex md:hidden flex-nowrap w-full justify-between items-center px-4">
+            <svg class="bi bi-list cursor-pointer" fill="currentColor" height="24" id="menuIcon" viewBox="0 0 16 16"
+                 width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                      fill-rule="evenodd"/>
+            </svg>
+            <img alt="snap_logo" src="./assets/images/snappTextLogo.svg">
+        </div>
+
+        <img alt="snap_logo" class="hidden md:flex" src="./assets/images/snappTextLogo.svg">
+
+        <ul class="list-none text-clamp justify-start items-center hidden md:flex h-[3.5rem] mx-6 text-text_nav gap-2 cursor-default ">
+
+            <li class="flex items-center hover:text-green_snap group/item relative py-2">
+                سوپر اپ اسنپ
+                <svg class="bi bi-chevron-down  cursor-pointer hover:fill-green_snap mr-1" fill="currentColor"
+                     height="12" viewBox="0 0 16 16"
+                     width="12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                          fill-rule="evenodd"/>
+                </svg>
+                <ul class="group-hover/item:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out text-text_nav
+                group-hover/item:max-h-[27.5rem] group-hover/item:opacity-100 duration-500 min-w-40 border border-1 z-50
+                 border-text_nav absolute top-9 py-1 rounded-lg flex-col bg-white justify-start items-start leading-5">
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        درخواست تاکسی
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        پیک موتوری
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        سفارش آنلاین غذا
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        سوپرمارکت
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        رزرو بلیط هواپیما
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        رزرو بلیط قطار
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        رزرو بلیط اتوبوس
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        رزرو هتل
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        درخواست وانت بار
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        خدمات اسباب‌کشی
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        پزشک و مشاور
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        اسنپ پرو
+                    </li>
+                </ul>
+
+            </li>
+            <li class="flex items-center hover:text-green_snap py-2"> ثبت نام راننده اسنپ</li>
+            <li class="flex items-center hover:text-green_snap py-2">باشگاه رانندگان</li>
+            <li class="flex items-center hover:text-green_snap py-2">پنل سازمانی</li>
+            <li class="flex items-center hover:text-green_snap py-2">بلاگ</li>
+            <li class="flex items-center hover:text-green_snap py-2 group/item_about relative">
+                درباره اسنپ
+                <svg class="bi bi-chevron-down cursor-pointer hover:fill-green_snap mr-1" fill="currentColor"
+                     height="12" viewBox="0 0 16 16" width="12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                          fill-rule="evenodd"/>
+                </svg>
+
+                <ul class="group-hover/item_about:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out py-1 z-50
+                 group-hover/item_about:max-h-48 group-hover/item_about:opacity-100 duration-500 min-w-40 border border-1
+                 border-text_nav absolute top-7 rounded-lg flex-col bg-white justify-start items-start text-text_nav leading-5">
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        فرصت های شغلی
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        درباره ما
+                    </li>
+                    <li class="hover:text-green_snap hover:font-Vazir_Bold flex items-center flex-nowrap px-3 py-1 w-full cursor-pointer">
+                        تماس با ما
+                    </li>
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+<!--end navbar-->
+
+<!--navbar devise sm -->
+<nav class="hidden w-full bg-bg_nav_res md:hidden" id="navbarSM">
+
+    <div class="w-full sm:w-1/2 bg-white justify-start items-start border border-l-2 h-screen">
+        <ul class="list-none w-full flex flex-col justify-start items-start text-sm py-2 px-3">
+            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navItem" >
+                <div class="w-full flex justify-between items-center" onclick="toggleDropdownScreenSuperApp()">
+                    <span class="font-Vazir_Bold">سوپر اپ اسنپ</span>
+                    <svg class="bi bi-chevron-down" fill="currentColor"
+                         height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                              fill-rule="evenodd"/>
+                    </svg>
+                </div>
+                <ul class="group-hover/navItem:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
+                 group-hover/navItem:md:max-h-[27rem] group-hover/navItem:md:opacity-100 duration-500 flex-col bg-white
+                 justify-start py-1 items-start text-text_nav leading-5" id="superAppScreen">
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        درخواست تاکسی
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        پیک موتوری
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        سفارش آنلاین غذا
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        سوپرمارکت
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        رزرو بلیط هواپیما
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        رزرو بلیط قطار
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        رزرو بلیط اتوبوس
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        رزرو هتل
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        درخواست وانت بار
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        خدمات اسباب‌کشی
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        پزشک و مشاور
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap my-2 w-full cursor-pointer">
+                        اسنپ پرو
+                    </li>
+                </ul>
+            </li>
+            <li class="w-full px-4 cursor-pointer my-4 font-Vazir_Bold "> ثبت نام راننده اسنپ</li>
+            <li class="w-full px-4 cursor-pointer my-4 font-Vazir_Bold ">باشگاه رانندگان</li>
+            <li class="w-full px-4 cursor-pointer my-4 font-Vazir_Bold ">پنل سازمانی</li>
+            <li class="w-full px-4 cursor-pointer my-4 font-Vazir_Bold ">بلاگ</li>
+            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navAbout">
+                <div class="w-full flex justify-between items-center" onclick="toggleDropdownScreenAbout()">
+                    <span class="font-Vazir_Bold">سوپر اپ اسنپ</span>
+                    <svg class="bi bi-chevron-down" fill="currentColor"
+                         height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                              fill-rule="evenodd"/>
+                    </svg>
+                </div>
+                <ul id="aboutScreen" class="group-hover/navAbout:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
+                 group-hover/navAbout:md:max-h-48 group-hover/navAbout:md:opacity-100 duration-500 flex-col bg-white py-1
+                 justify-start items-start text-text_nav leading-5">
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        درخواست تاکسی
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        پیک موتوری
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        سفارش آنلاین غذا
+                    </li>
+                </ul>
+            </li>
+            <hr class="w-full bg-bg_dark1 my-3">
+            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navApp" >
+                <div class="w-full flex justify-between items-center" onclick="toggleDropdownScreenApp()">
+                    <span class="font-Vazir_Bold text-green_snap">اپلیکیشن اسنپ</span>
+                    <svg class="bi bi-chevron-down fill-green_snap" fill="currentColor" fill-rule="evenodd"
+                         height="18" viewBox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                </div>
+                <ul id="appScreen" class="group-hover/navApp:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
+                 group-hover/navApp:md:max-h-48 group-hover/navApp:md:opacity-100 duration-500 flex-col bg-white py-1 leading-5
+                 justify-start items-start text-green_snap">
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        دانلود مستقیم
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        دانلود از کافه بازار
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        دانلود از مایکت
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        وب اپلیکیشن اسنپ
+                    </li>
+                    <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
+                        دانلود از اپ استور
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<script>
+    const navBar = document.querySelector("#navbarSM")
+    const IconNavbar = document.querySelector("#menuIcon")
+
+    IconNavbar.addEventListener("click", () => {
+        if (navBar.classList.contains("hidden")) {
+            navBar.classList.remove("hidden");
+        } else {
+            navBar.classList.add("hidden");
+        }
+    });
+
+    function toggleDropdownScreenSuperApp() {
+        let dropdown = document.getElementById("superAppScreen");
+        dropdown.classList.toggle("max-h-0");
+        dropdown.classList.toggle("opacity-0");
+        dropdown.classList.toggle("max-h-[27rem]");
+        dropdown.classList.toggle("opacity-100");
+    }
+
+    function toggleDropdownScreenAbout() {
+        let dropdown = document.getElementById("aboutScreen");
+        dropdown.classList.toggle("max-h-0");
+        dropdown.classList.toggle("opacity-0");
+        dropdown.classList.toggle("max-h-48");
+        dropdown.classList.toggle("opacity-100");
+    }
+    function toggleDropdownScreenApp() {
+        let dropdown = document.getElementById("appScreen");
+        dropdown.classList.toggle("max-h-0");
+        dropdown.classList.toggle("opacity-0");
+        dropdown.classList.toggle("max-h-48");
+        dropdown.classList.toggle("opacity-100");
+    }
+</script>
+
 </body>
+
 </html>
