@@ -115,7 +115,7 @@
 <!--end navbar-->
 
 <!--navbar devise sm -->
-<nav class="hidden w-full bg-bg_nav_res md:hidden" id="navbarSM">
+<nav class="hidden w-full bg-bg_nav_res absolute md:hidden" id="navbarSM">
 
     <div class="w-full sm:w-1/2 bg-white justify-start items-start border border-l-2 h-screen">
         <ul class="list-none w-full flex flex-col justify-start items-start text-sm py-2 px-3">
@@ -228,7 +228,46 @@
         </ul>
     </div>
 </nav>
+<!-- end navbar devise sm-->
 
+<!--App introduction section-->
+<section class="flex w-full">
+    <article class="flex flex-col md:w-2/3 lg:w-1/2 bg-green_snap items-end justify-center text-white p-7">
+        <h1 class="text-clamp_intro md:leading-[60px] lg:leading-[50px] font-Vazir_Bold w-full md:w-4/5">
+            تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
+        </h1>
+        <p class="text-clamp_dis mt-6 w-full md:w-4/5">
+            از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر، رزرو هتل و... را میتوانید با اسنپ انجام دهید.
+        </p>
+
+        <div class="hidden md:flex w-4/5 items-center justify-start mt-6 ">
+            <label class="w-1/2">
+                <input
+                        type="text"
+                        placeholder="09*********"
+                        dir="ltr"
+                        class="bg-transparent border-b-2 w-full outline-none px-2 py-1.5 placeholder-white text-right"
+                >
+            </label>
+            <button class="text-green_snap bg-white rounded-md mx-4 md:px-4 lg:px-6 py-1.5">ارسال لینک</button>
+        </div>
+<div class="flex w-full md:w-4/5 mt-8">
+    <button class="border border-white bg-green_snap hover:bg-bg_muted py-2 px-4 rounded-md hidden md:flex font-Vazir_Bold">
+        ورود به وب اپلیکیشن اسنپ
+    </button>
+    <button class=" bg-white py-2 px-4 rounded-md flex w-full md:hidden text-black items-center justify-center">
+        ورود به وب اپلیکیشن اسنپ
+    </button>
+</div>
+
+
+    </article>
+    <article class="hidden md:flex md:w-1/3 lg:w-1/2 object-cover -scale-x-100">
+        <img src="./assets/images/intro_desktop.jpg" alt="user image">
+    </article>
+</section>
+
+<!--End App introduction section-->
 
 <script>
     const navBar = document.querySelector("#navbarSM")
