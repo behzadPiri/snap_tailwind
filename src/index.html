@@ -118,7 +118,7 @@
 <nav class="hidden w-full bg-bg_nav_res absolute md:hidden" id="navbarSM">
     <div class="w-full sm:w-1/2 bg-white justify-start items-start border border-l-2 h-screen">
         <ul class="list-none w-full flex flex-col justify-start items-start text-sm py-2 px-3">
-            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navItem" >
+            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navItem">
                 <div class="w-full flex justify-between items-center" onclick="toggleDropdownScreenSuperApp()">
                     <span class="font-Vazir_Bold">سوپر اپ اسنپ</span>
                     <svg class="bi bi-chevron-down" fill="currentColor"
@@ -181,9 +181,9 @@
                               fill-rule="evenodd"/>
                     </svg>
                 </div>
-                <ul id="aboutScreen" class="group-hover/navAbout:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
+                <ul class="group-hover/navAbout:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
                  group-hover/navAbout:md:max-h-48 group-hover/navAbout:md:opacity-100 duration-500 flex-col bg-white py-1
-                 justify-start items-start text-text_nav leading-5">
+                 justify-start items-start text-text_nav leading-5" id="aboutScreen">
                     <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
                         درخواست تاکسی
                     </li>
@@ -196,7 +196,7 @@
                 </ul>
             </li>
             <hr class="w-full bg-bg_dark1 my-3">
-            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navApp" >
+            <li class="w-full flex flex-col px-4 py-2 cursor-pointer group/navApp">
                 <div class="w-full flex justify-between items-center" onclick="toggleDropdownScreenApp()">
                     <span class="font-Vazir_Bold text-green_snap">اپلیکیشن اسنپ</span>
                     <svg class="bi bi-chevron-down fill-green_snap" fill="currentColor" fill-rule="evenodd"
@@ -204,9 +204,9 @@
                         <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                     </svg>
                 </div>
-                <ul id="appScreen" class="group-hover/navApp:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
+                <ul class="group-hover/navApp:md:flex max-h-0 opacity-0 overflow-hidden transition-all ease-in-out w-full
                  group-hover/navApp:md:max-h-48 group-hover/navApp:md:opacity-100 duration-500 flex-col bg-white py-1 leading-5
-                 justify-start items-start text-green_snap">
+                 justify-start items-start text-green_snap" id="appScreen">
                     <li class="hover:text-green_snap flex items-center flex-nowrap py-1.5 w-full cursor-pointer">
                         دانلود مستقیم
                     </li>
@@ -236,46 +236,246 @@
             تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
         </h1>
         <p class="text-clamp_dis mt-6 w-full md:w-4/5">
-            از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر، رزرو هتل و... را میتوانید با اسنپ انجام دهید.
+            از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر، رزرو هتل و... را میتوانید با اسنپ انجام
+            دهید.
         </p>
 
         <div class="hidden md:flex w-4/5 items-center justify-start mt-6 ">
             <label class="w-1/2">
                 <input
-                        type="text"
-                        placeholder="09*********"
-                        dir="ltr"
                         class="bg-transparent border-b-2 w-full outline-none px-2 py-1.5 placeholder-white text-right"
+                        dir="ltr"
+                        placeholder="09*********"
+                        type="text"
                 >
             </label>
             <button class="text-green_snap bg-white rounded-md mx-4 md:px-4 lg:px-6 py-1.5">ارسال لینک</button>
         </div>
-<div class="flex w-full md:w-4/5 mt-8">
-    <button class="border border-white bg-green_snap hover:bg-bg_muted py-2 px-4 rounded-md hidden md:flex font-Vazir_Bold">
-        ورود به وب اپلیکیشن اسنپ
-    </button>
-    <button class=" bg-white py-2 px-4 rounded-md flex w-full md:hidden text-black items-center justify-center">
-        ورود به وب اپلیکیشن اسنپ
-    </button>
-</div>
+        <div class="flex w-full md:w-4/5 mt-8">
+            <button class="border border-white bg-green_snap hover:bg-bg_muted py-2 px-4 rounded-md hidden md:flex font-Vazir_Bold">
+                ورود به وب اپلیکیشن اسنپ
+            </button>
+            <button class=" bg-white py-2 px-4 rounded-md flex w-full md:hidden text-black items-center justify-center">
+                ورود به وب اپلیکیشن اسنپ
+            </button>
+        </div>
 
 
     </article>
     <article class="hidden md:flex md:w-1/3 lg:w-1/2 object-cover -scale-x-100">
-        <img src="./assets/images/intro_desktop.jpg" alt="user image">
+        <img alt="user image" src="./assets/images/intro_desktop.jpg">
     </article>
 </section>
 <!--End App introduction section-->
 
 <!--market image download app-->
 <section class="hidden md:flex flex-wrap w-3/4 mx-auto items-center justify-around my-6 gap-2">
-    <img height="47" width="160" class="cursor-pointer" src="./assets/images/market/app_store.svg" alt="app_store">
-    <img height="47" width="160" class="cursor-pointer" src="./assets/images/market/bazaar.png" alt="bazaar">
-    <img height="47" width="160" class="cursor-pointer" src="./assets/images/market/direct-download-badge.png" alt="direct-download-badge">
-    <img height="47" width="160" class="cursor-pointer" src="./assets/images/market/snapp-pwa.png" alt="pwa">
-    <img height="47" width="160" class="cursor-pointer" src="./assets/images/market/myketmarket.png" alt="myket">
+    <img alt="app_store" class="cursor-pointer" height="47" src="./assets/images/market/app_store.svg" width="160">
+    <img alt="bazaar" class="cursor-pointer" height="47" src="./assets/images/market/bazaar.png" width="160">
+    <img alt="direct-download-badge" class="cursor-pointer" height="47"
+         src="./assets/images/market/direct-download-badge.png"
+         width="160">
+    <img alt="pwa" class="cursor-pointer" height="47" src="./assets/images/market/snapp-pwa.png" width="160">
+    <img alt="myket" class="cursor-pointer" height="47" src="./assets/images/market/myketmarket.png" width="160">
 </section>
 <!--end market image download app-->
+
+<!--services-->
+<section class="w-full flex flex-col bg-bg_gray justify-center items-center py-6 mx-auto">
+
+    <h1 class="font-Vazir_Bold text-clamp_intro">یک اپلیکیشن، برای تمام نیازها</h1>
+
+
+    <article class="w-full flex flex-wrap justify-start items-start ">
+
+        <div class="w-full px-4 sm:px-0 sm:w-4/5 mx-auto flex flex-wrap">
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/3 mt-6">
+                <div class="w-11/12 bg-white rounded-xl px-2 py-3 flex flex-col lg:flex-row justify-center items-center lg:justify-start cursor-pointer ">
+                    <img src="./assets/images/icons/taxi.svg" width="70" height="70" alt="img" class="flex rounded-xl justify-center">
+                    <div class="flex flex-col mx-2 justify-center text-text_nav">
+                        <h3 class="font-Vazir_Bold text-center lg:text-right ">تاکسی اینترنتی</h3>
+                        <p class="hidden md:flex text-center lg:text-right text-clamp">درخواست آنلاین خودرو</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
+<!--end services-->
 
 <script>
     const navBar = document.querySelector("#navbarSM")
@@ -304,6 +504,7 @@
         dropdown.classList.toggle("max-h-48");
         dropdown.classList.toggle("opacity-100");
     }
+
     function toggleDropdownScreenApp() {
         let dropdown = document.getElementById("appScreen");
         dropdown.classList.toggle("max-h-0");
