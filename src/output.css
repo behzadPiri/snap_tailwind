@@ -606,6 +606,10 @@ video {
   z-index: 50;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -692,6 +696,10 @@ video {
   margin-bottom: 2%;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -732,6 +740,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[100\%\] {
+  height: 100%;
 }
 
 .max-h-0 {
@@ -911,6 +923,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -947,6 +963,10 @@ video {
   border-left-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-text_nav {
   --tw-border-opacity: 1;
   border-color: rgb(65 65 65 / var(--tw-border-opacity));
@@ -955,6 +975,16 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-b-gray-500 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .bg-bg_dark1 {
@@ -1011,6 +1041,22 @@ video {
 
 .fill-green_snap {
   fill: #21aa58;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-none {
+  fill: none;
+}
+
+.stroke-\[\#323232\] {
+  stroke: #323232;
+}
+
+.stroke-\[1\.5\] {
+  stroke-width: 1.5;
 }
 
 .object-cover {
@@ -1272,6 +1318,18 @@ video {
   max-height: 12rem;
 }
 
+.group\/navAbout:hover .group-hover\/navAbout\:max-h-48 {
+  max-height: 12rem;
+}
+
+.group\/navApp:hover .group-hover\/navApp\:max-h-48 {
+  max-height: 12rem;
+}
+
+.group\/navItem:hover .group-hover\/navItem\:max-h-\[27rem\] {
+  max-height: 27rem;
+}
+
 .group\/item:hover .group-hover\/item\:opacity-100 {
   opacity: 1;
 }
@@ -1280,9 +1338,49 @@ video {
   opacity: 1;
 }
 
+.group\/navAbout:hover .group-hover\/navAbout\:opacity-100 {
+  opacity: 1;
+}
+
+.group\/navApp:hover .group-hover\/navApp\:opacity-100 {
+  opacity: 1;
+}
+
+.group\/navItem:hover .group-hover\/navItem\:opacity-100 {
+  opacity: 1;
+}
+
 .dark\:bg-bg_dark1:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(36 36 36 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-bg_dark2:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-white:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark\:fill-white:is(.dark *) {
+  fill: #fff;
+}
+
+.dark\:stroke-white:is(.dark *) {
+  stroke: #fff;
+}
+
+.dark\:py-1\.5:is(.dark *) {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
