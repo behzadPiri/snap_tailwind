@@ -638,6 +638,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -652,6 +657,22 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-\[2\%\] {
+  margin-bottom: 2%;
 }
 
 .flex {
@@ -725,6 +746,22 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-\[5rem\] {
+  width: 5rem;
 }
 
 .min-w-40 {
@@ -822,6 +859,14 @@ video {
 
 .gap-2\.5 {
   gap: 0.625rem;
+}
+
+.gap-\[2\%\] {
+  gap: 2%;
+}
+
+.gap-y-\[2\%\] {
+  row-gap: 2%;
 }
 
 .overflow-hidden {
@@ -989,6 +1034,31 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1038,6 +1108,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .leading-5 {
@@ -1180,6 +1255,10 @@ video {
     width: 80%;
   }
 
+  .sm\:w-1\/6 {
+    width: 16.666667%;
+  }
+
   .sm\:basis-\[245px\] {
     flex-basis: 245px;
   }
@@ -1307,6 +1386,18 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:h-\[66px\] {
+    height: 66px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1317,6 +1408,14 @@ video {
 
   .lg\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .lg\:w-\[48\%\] {
+    width: 48%;
+  }
+
+  .lg\:w-\[120px\] {
+    width: 120px;
   }
 
   .lg\:translate-y-\[-8rem\] {
@@ -1333,8 +1432,16 @@ video {
     flex-direction: row;
   }
 
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:justify-start {
@@ -1367,6 +1474,10 @@ video {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .xl\:translate-y-\[-8rem\] {
