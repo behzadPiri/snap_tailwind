@@ -566,12 +566,20 @@ video {
   src: url(./assets/fonts/Vazir-Bold-FD-WOL.woff) format('woff');
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .inset-0 {
@@ -588,6 +596,10 @@ video {
 
 .top-9 {
   top: 2.25rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-50 {
@@ -1266,6 +1278,11 @@ video {
 
 .group\/item_about:hover .group-hover\/item_about\:opacity-100 {
   opacity: 1;
+}
+
+.dark\:bg-bg_dark1:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
